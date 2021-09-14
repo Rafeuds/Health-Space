@@ -32,6 +32,9 @@ $ npm update
 # Execute a aplicação backend
 $ npm start
 
+# Documentação do projeto na rota '/documentacao'
+$ npm run swagger-autogen
+
 # Vá para a pasta frontend
 $ cd ../frontend
 
@@ -43,6 +46,34 @@ $ npm start
 
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
+É necessario criar em seu banco de dados uma tebela chamada "healthlab" com as colunas, post, post_tag, tag, user e seus respectivos atributos. Depois conecta-la através da criação de uma pasta config e um arquivo config.json com o seguinte código:
+
+```
+{
+    "development": {
+      "username": "root",
+      "password": "sua senha",
+      "database": "healthlab",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "sua senha",
+      "database": "healthlab",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "sua senha",
+      "database": "healthlab",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    }
+  }
+  
+```
 
 ### 🛠 Tecnologias
 
@@ -53,6 +84,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://www.w3schools.com/css/)
 - [Angular](https://angular.io/start)
+- [Swagger](https://swagger.io/)
 
 ## Integrantes do grupo
 ---
