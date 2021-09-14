@@ -18,7 +18,7 @@ Utilizando o terminal instale o Express, Sequelize, Sequelize-auto, Sequelize-cl
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/Matts-R/healthlab.git>
+$ git clone <https://github.com/Rafas-ms/Health-Space.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd healthlab
