@@ -1,0 +1,94 @@
+*
+h1{
+  font-family: cursive;
+  margin-left: 40%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.txtarea{
+    border-radius: 10px;
+    height: 30rem;
+    width: 60rem;
+    resize: none;
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.5rem;
+}
+.txtarea1{
+  border-radius: 10px;
+  height: 2.5rem;
+  width: 40rem;
+  resize: none;
+  font-family: 'KoHo', sans-serif;
+  font-size: 1.800rem;
+}
+.campo{
+  margin-left: 13%;
+  font-family: cursive;
+  margin-top: 2px;
+  margin-bottom: 1em;
+  display: center;
+  align-items: baseline;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.icones:focus {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1rem;
+    justify-content: flex-end;
+    width: 60rem;
+    border-radius: 100px;    
+}
+
+.home-container {
+    width: 100%;
+    height: 90vh;
+    margin-left: 70%;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+}
+
+
+
+.navbar {
+    height: 10vh;
+    width: 100vw;
+  
+    background: rgb(207, 220, 250);
+    background: linear-gradient(
+      21deg,
+      rgba(207, 220, 250, 1) 0%,
+      rgba(197, 249, 255, 1) 52%,
+      rgba(201, 255, 255, 1) 87%
+    );
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .back-arrow {
+    height: 2rem;
+    width: 2rem;
+  
+    margin-left: 1.5rem;
+  }
+  
+  .logo {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .logout {
+    height: 5rem;
+    width: 2rem;
+  
+    margin-right: 1.5rem;
+  }
+

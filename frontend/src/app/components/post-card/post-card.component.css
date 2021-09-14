@@ -1,0 +1,27 @@
+.post-card {
+  height: 20vh;
+  width: 95%;
+  margin: 2rem auto 3rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background: #f5f5f5;
+  box-shadow: 5px 5px 12px #bebebe, -5px -5px 12px #ffffff;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  border-radius: 15px;
+  background: #f5f5f5;
+  box-shadow: 5px 5px 0px #777777, -5px -5px 0px #ffffff;
+
+  transform: translateY(-0.3rem);
+}
+
+.titulo {
+  margin: 1rem 1rem 0rem 1rem;
+  font-family: "KoHo", sans-serif;
+  text-align: center;
+}

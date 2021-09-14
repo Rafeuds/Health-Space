@@ -1,0 +1,44 @@
+<div class="tags-container">
+  <mat-chip-list aria-label="Filter tags" selectable multiple>
+    <mat-chip
+      #c="matChip"
+      (click)="selectChip(c)"
+      class="chips"
+      *ngFor="let tag of tags"
+      [value]="tag"
+      >{{ tag.name }}</mat-chip
+    >
+  </mat-chip-list>
+  <div class="see-more" (click)="openModal()">
+    <img class="plus-icon" src="assets/plus.svg" alt="Plus icon" />
+    <span class="see-more-text">Ver mais</span>
+  </div>
+</div>
+
+<!-- Modal content -->
+<div id="myModal" class="{{ modalClass }}">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span (click)="closeModal()" class="close">&times;</span>
+      <h2>Mais Tags</h2>
+    </div>
+    <div class="modal-body">
+      <mat-chip-list
+        aria-label="Filter tags"
+        class="chips-div"
+        selectable
+        multiple
+      >
+        <mat-chip
+          #c="matChip"
+          (click)="selectChip(c)"
+          class="chips"
+          *ngFor="let tag of allTags"
+          [value]="tag.name"
+          >{{ tag.name }}</mat-chip
+        >
+      </mat-chip-list>
+    </div>
+    <div class="modal-footer"></div>
+  </div>
+</div>

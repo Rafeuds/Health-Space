@@ -1,0 +1,13 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="post-container">
+  <ng-container *ngFor="let post of posts">
+    <div class="post-card">
+      <div class="follow-info">
+        <img src={{post.imagem}} alt="" class="user-image" />
+        <div id="user" class="follow-text">{{post.name}}</div>
+      </div>
+      <button class="follow-button">Deixar de seguir</button>
+    </div>
+  </ng-container>
+</div>
